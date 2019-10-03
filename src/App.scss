@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+
+}
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.todolists-container {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  justify-content: space-between;
+  &__tasks, &__todos {
+    position: relative;
+    flex: 1;
+    border-radius: 20px;
+    list-style-type: none;
+    margin: 0;
+  }
+  &__tasks {
+    padding: 2rem 2rem 2rem 4rem;
+
+  }
+  &__todos {
+    //Properties are reverse
+
+  }
+}
+.todolists {
+  &__todo {
+    &-btn {
+      &:hover {
+        cursor: pointer;
+        background: #eeeeee;
+      }
+      &--selected {
+        background: lightblue;
+        &:hover {
+          background: darken(lightblue, 10%)
+        }
+      }
+      display: block;
+
+      background: none;
+      border: none;
+      width: 100%;
+      padding: .8rem;
+      border-bottom: 1px solid lightblue;
+    }
+  }
+}
